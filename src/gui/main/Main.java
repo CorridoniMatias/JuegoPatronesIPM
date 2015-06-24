@@ -12,6 +12,6 @@ public class Main {
 		Arquero a = (Arquero) hl.crearLuchador(TipoLuchador.ARQUERO);
 		System.out.println(a.toString());
 		a.atacar();
-
+		a.atacar();
 	}
 }

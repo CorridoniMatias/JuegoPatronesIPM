@@ -16,7 +16,7 @@ public class Arquero extends Luchador{
 	}
 
 	public void atacar() {
-		((CBaseArmaMunicion)this.arma).accionar(); //Alguna forma de hacer esto mas lindo?
+		(this.arma).accionar(); //Alguna forma de hacer esto mas lindo?
 	}
 	
 	public String toString()

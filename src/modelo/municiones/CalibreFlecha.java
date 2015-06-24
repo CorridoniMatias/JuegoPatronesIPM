@@ -5,6 +5,6 @@ public class CalibreFlecha extends CBaseMunicion{
 	
 	public String toString()
 	{
-		return "Soy una flecha! Con '" + DAÑO + "' de daño!"; 
+		return "Soy una flecha normal! Con '" + DAÑO + "' de daño!"; 
 	}
 }
