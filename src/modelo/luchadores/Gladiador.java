@@ -14,10 +14,6 @@ public class Gladiador extends Luchador {
 		this.armadura	= this.fabrica.crearArmadura();
 	}
 
-	public void atacar() {
-		this.arma.accionar();
-	}
-	
 	public String toString()
 	{
 		return "Soy un gladiador!";
