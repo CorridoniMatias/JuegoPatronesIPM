@@ -10,12 +10,14 @@ public class Arquero extends Luchador{
 	}
 
 	public void setear() {
-		this.arma		= this.fabrica.crearArma();
-		this.armadura	= this.fabrica.crearArmadura();
+		this.arma				= null;
+		this.armasDisponibles	= this.fabrica.crearArmas();
+		this.armadura			= this.fabrica.crearArmadura();
+		this.vida				= 10;
 	}
 
 	public String toString()
 	{
-		return "Soy un arquero!";
+		return "Carlo Magno";
 	}
 }

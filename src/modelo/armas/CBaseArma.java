@@ -15,8 +15,16 @@ FabricaMunicionPistola
 */
 public abstract class CBaseArma {
 	
+	protected int daño = 15;
+	
 	public CBaseArma()
 	{
+		this.setear();
+	}
+	
+	public int getDaño()
+	{
+		return this.daño;
 	}
 	
 	public abstract void setear();

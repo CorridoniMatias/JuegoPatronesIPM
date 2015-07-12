@@ -8,7 +8,7 @@ public class Espada extends CBaseArma{
 	}
 
 	public void setear() {
-		
+		this.daño = 3;
 	}
 
 	public void accionar() {

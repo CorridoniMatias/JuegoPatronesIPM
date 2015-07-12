@@ -13,4 +13,9 @@ public abstract class CBaseArmaMunicion extends CBaseArma{
 		this.fabrica = fa;
 		this.setear();
 	}
+	
+	public CBaseMunicion getMunicion()
+	{
+		return this.municion;
+	}
 }

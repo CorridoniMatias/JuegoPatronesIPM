@@ -10,12 +10,14 @@ public class Gladiador extends Luchador {
 	}
 
 	public void setear() {
-		this.arma 		= this.fabrica.crearArma();
-		this.armadura	= this.fabrica.crearArmadura();
+		this.arma 				= null;
+		this.armasDisponibles	= this.fabrica.crearArmas();
+		this.armadura			= this.fabrica.crearArmadura();
+		this.vida				= 20;
 	}
 
 	public String toString()
 	{
-		return "Soy un gladiador!";
+		return "Peter Pan";
 	}
 }

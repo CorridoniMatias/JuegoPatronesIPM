@@ -1,8 +1,14 @@
 package modelo.estrategia;
 
-public class EstrategiaLejana implements Estrategia{
+import modelo.luchadores.Luchador;
+
+public class EstrategiaLejana extends Estrategia {
 
 	public void atacar() {
 		
+	}
+
+	public void setArmaAtacante(Luchador atacante) {
+		atacante.setArma(Objetivo.DISTANTE);
 	}
 }
