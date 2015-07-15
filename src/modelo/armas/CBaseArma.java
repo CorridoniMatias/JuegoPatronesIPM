@@ -28,6 +28,7 @@ public abstract class CBaseArma {
 	}
 	
 	public abstract void setear();
-	
 	public abstract void accionar(); //Disparar
+	public abstract String getTipo();
+	public abstract String toString();
 }

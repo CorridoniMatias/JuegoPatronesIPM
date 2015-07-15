@@ -9,4 +9,12 @@ public class Lanza extends CBaseArma{
 	public void accionar() {
 		
 	}
+
+	public String getTipo() {
+		return "Lejano";
+	}
+
+	public String toString() {
+		return "Lanza";
+	}
 }

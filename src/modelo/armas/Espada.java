@@ -4,7 +4,7 @@ public class Espada extends CBaseArma{
 
 	public String toString()
 	{
-		return "Soy un arco!";
+		return "Espada";
 	}
 
 	public void setear() {
@@ -13,5 +13,9 @@ public class Espada extends CBaseArma{
 
 	public void accionar() {
 		System.out.println("Soy una espada atacando!");
+	}
+
+	public String getTipo() {
+		return "Cercano";
 	}
 }

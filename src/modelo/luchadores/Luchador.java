@@ -1,5 +1,7 @@
 package modelo.luchadores;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -22,6 +24,7 @@ public abstract class Luchador {
 	public Luchador(FabricaEquipamientoLuchador fab)
 	{
 		this.fabrica = fab;
+		this.estrategiasDisponibles = new HashMap<Objetivo, Estrategia>();
 		this.setear();
 	}
 	
@@ -65,16 +68,19 @@ public abstract class Luchador {
 	
 	public void herir(int daño) {
 		this.vida -= daño;
+		if(this.deberiaMorir()) //Por si se va a negativo.
+			this.vida = 0;
 		
 		/*if(this.deberiaMorir())
 			this.morir(); //Esto deberia ser un system.out.
 			*/
 	}
 	
-	private boolean deberiaMorir() {
+	public boolean deberiaMorir() {
 		return ((this.vida <= 0) ? true : false);
 	}
 
 	public abstract void setear();
-
+	protected abstract void definirEstrategias();
+	
 }
